@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Text, View } from 'react-native';
-import { MyProfilePropsTypes } from './types/myprofile.types';
+import { MyProfilePropsTypes } from './types/profile.types';
 import Margin from '../common/Margin';
 
 export default (props: MyProfilePropsTypes) => {
@@ -11,7 +11,9 @@ export default (props: MyProfilePropsTypes) => {
         style={{ width: 50, height: 50, borderRadius: 20 }}
       />
       <View style={{ justifyContent: 'center', marginLeft: 10 }}>
-        <Text style={{ fontWeight: '500', fontSize: 16 }}>{props.name}</Text>
+        <Text style={{ fontWeight: '400', fontSize: 16, color: 'black' }}>
+          {props.name}
+        </Text>
         <Margin height={6} />
         <Text style={{ fontSize: 12, color: 'grey' }}>
           {props.introduction}

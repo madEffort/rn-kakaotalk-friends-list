@@ -1,0 +1,19 @@
+import React from 'react';
+import { Text, TouchableOpacity, View } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import { FriendSectionPropsTypes } from './types/friendSection.types';
+
+export const onArrowPress = () => {
+  console.log('asd');
+};
+
+export default (props: FriendSectionPropsTypes) => {
+  return (
+    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Text style={{ color: 'grey' }}>친구 {props.count}</Text>
+      <TouchableOpacity onPress={props.onArrowPress}>
+        <Icon name="keyboard-arrow-down" size={24} color={'lightgrey'} />
+      </TouchableOpacity>
+    </View>
+  );
+};

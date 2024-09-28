@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import { IconButtonPropsTypes } from './types/header.types';
 
 const IconButton = (props: IconButtonPropsTypes) => {
   return (
     <View style={{ paddingHorizontal: 6 }}>
-      <Ionicons name={props.name} size={24} color={'black'} />
+      <Icon name={props.name} size={24} color={'black'} />
     </View>
   );
 };
@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingVertical: 10,
-    backgroundColor: 'pink',
   },
   title: {
     fontSize: 23,

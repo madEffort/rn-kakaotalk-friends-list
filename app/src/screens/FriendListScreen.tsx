@@ -8,9 +8,11 @@ import Margin from '../components/common/Margin';
 import Division from '../components/common/Division';
 import FriendList from '../components/FriendList/FriendList';
 import FriendSection from '../components/FriendSection/FriendSection';
+import TabBar from '../components/TabBar/TabBar';
 
 export default () => {
   const [isOpened, setIsOpened] = useState(true);
+  const [selectedTabIdx, setSelectedTabIdx] = useState(0);
 
   const handleArrowPress = () => {
     setIsOpened(!isOpened);
@@ -20,7 +22,7 @@ export default () => {
     <SafeAreaView
       style={styles.container}
       edges={['top', 'right', 'bottom', 'left']}>
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, paddingHorizontal: 10 }}>
         <Header />
         <Margin height={10} />
         <MyProfile
@@ -38,6 +40,10 @@ export default () => {
         />
         <FriendList data={friendProfiles} isOpened={isOpened} />
       </View>
+      <TabBar
+        selectedTabIdx={selectedTabIdx}
+        setSelectedTabIdx={setSelectedTabIdx}
+      />
     </SafeAreaView>
   );
 };
@@ -46,6 +52,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingHorizontal: 10,
   },
 });

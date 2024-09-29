@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, StyleSheet, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native';
 import Header from '../components/Header/Header';
 import MyProfile from '../components/Profile/Profile';
 import { friendProfiles, myProfile } from '../constants/data';

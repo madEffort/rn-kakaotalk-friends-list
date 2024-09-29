@@ -1,12 +1,9 @@
 import React from 'react';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import FriendListScreen from './screens/FriendListScreen';
+import FriendListScreen from './pages/FriendListPage';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaProvider>
       <FriendListScreen />
-    </SafeAreaProvider>
   );
 }
 

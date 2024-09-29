@@ -9,7 +9,7 @@ export default (props: FriendSectionPropsTypes) => {
       <Text style={{ color: 'grey' }}>친구 {props.count}</Text>
       <TouchableOpacity onPress={props.onArrowPress}>
         <MaterialIcons
-          name={props.isOpened ? 'keyboard-arrow-down' : 'keyboard-arrow-up'}
+          name={props.isOpened ? 'keyboard-arrow-up' : 'keyboard-arrow-down'}
           size={24}
           color={'lightgrey'}
         />

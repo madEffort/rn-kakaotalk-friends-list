@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingVertical: 10,
+    backgroundColor: '#fff',
   },
   title: {
     fontSize: 23,

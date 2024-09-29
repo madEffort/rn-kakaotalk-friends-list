@@ -51,6 +51,7 @@ export default (props: FriendListPropsTypes) => {
               uri={item.uri}
               name={item.name}
               introduction={item.introduction}
+              isMe={false}
             />
             <Margin height={13} />
           </View>
